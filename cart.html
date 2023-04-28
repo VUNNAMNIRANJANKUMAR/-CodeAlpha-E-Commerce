@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Products - Napoles</title>
+    <link rel="stylesheet" href="style.css">
+    <link href=https://fonts.google.com/share?selection.family=Poppins:wght@300;400;500;600;700 rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+        <div class="navbar">
+         <div class="logo">
+                <img src="C:\Users\vunna\OneDrive\Napoles.jpg" width="125px">
+        </div>
+         <nav>
+             <ul id="MenuItems">
+                <li><a href="C:\Users\vunna\style.html">Home</a></li>
+                <li><a href="C:\Users\vunna\products.html">Product</a></li>
+                <li><a href="C:\Users\vunna\about.html">About</a></li>
+                <li><a href="C:\Users\vunna\contact.html">Contact</a></li>
+                <li><a href="C:\Users\vunna\account.html">Account</a></li>
+             </ul>
+        </nav>
+        <a href="C:\Users\vunna\cart.html"><img src="C:\Users\vunna\OneDrive\Pictures\Saved Pictures\cart.png" width="30px" height="30px"></a>
+        <img src="C:\Users\vunna\OneDrive\Pictures\Saved Pictures\menu.png" class="menu-icon"
+        onclick="menutoggle()">
+     </div> 
+ </div>
+ <!-----------cart item details------->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="C:\Users\vunna\OneDrive\Pictures\Saved Pictures\layering3.jpg" >
+                    <div>
+                        <p>Black Jacket by H&M</p>
+                        <small>Price: 2599</small>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>2599</td>
+        </tr>
+        `<tr>
+            <td>
+                <div class="cart-info">
+                    <img src="C:\Users\vunna\OneDrive\Pictures\Saved Pictures\sinsaree.jpg" >
+                    <div>
+                        <p>Sin saree for women</p>
+                        <small>Price: 1899</small>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>1899</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="C:\Users\vunna\OneDrive\Pictures\Saved Pictures\boywear1.jpeg" >
+                    <div>
+                        <p>Function wear for boy</p>
+                        <small>Price: 1799</small>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>1799</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>6297</td>
+            </tr>
+            <tr>
+                <td>Taxes</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>6507</td>
+            </tr>
+        </table>
+    </div>
+</div>
+ 
+<!-----------footer--------->   
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS Devices</p>
+                <div class="app-logo">
+                    <img src="C:\Users\vunna\OneDrive\Pictures\Saved Pictures\plastorelogo.png" >
+                    <img src="C:\Users\vunna\OneDrive\Pictures\Saved Pictures\appstorelogo.png" >
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="C:\Users\vunna\OneDrive\Napoles.jpg" style="height: 120px; width:110px">
+                <p>Our Purpose is to Sustainably Make the Pleasure and Benifits of Clothing Accessible to All.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Poliicy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2020 - Napoles</p>
+    </div>
+</div>
+<!-------------js for toggle menu--------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight= "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight== "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight= "0px"
+        }
+    }
+</script>
+
+
+</body>
+</html>
