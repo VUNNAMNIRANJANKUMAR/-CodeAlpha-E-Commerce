@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Products - Napoles</title>
+    <link rel="stylesheet" href="style.css">
+    <link href=https://fonts.google.com/share?selection.family=Poppins:wght@300;400;500;600;700 rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bd0b73435a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+        <div class="navbar">
+         <div class="logo">
+                <img src="C:\Users\vunna\OneDrive\Napoles.jpg" width="125px">
+        </div>
+         <nav>
+             <ul id="MenuItems">
+                <li><a href="C:\Users\vunna\style.html">Home</a></li>
+                <li><a href="C:\Users\vunna\products.html">Product</a></li>
+                <li><a href="C:\Users\vunna\about.html">About</a></li>
+                <li><a href="C:\Users\vunna\contact.html">Contact</a></li>
+                <li><a href="C:\Users\vunna\account.html">Account</a></li>
+             </ul>
+        </nav>
+        <a href="C:\Users\vunna\cart.html"><img src="C:\Users\vunna\OneDrive\Pictures\Saved Pictures\cart.png" width="30px" height="30px"></a>
+        <img src="C:\Users\vunna\OneDrive\Pictures\Saved Pictures\menu.png" class="menu-icon"
+        onclick="menutoggle()">
+     </div> 
+ </div>
+<!------------contact page------------->
+<div class="heading-on-contact">
+    <h1>Contact Customer Care : </h1>
+</div>
+<div class="">
+    <div class="names-box row">
+        <div class="fnames col-lg-6 col-md-12 col-sm-12">
+            <label for="fname" class="fname-text">Enter Your First name :</label>
+            <input type="text" class="fname" placeholder="First Name">
+        </div>
+        <div class="lnames col-lg-6 col-md-12 col-sm-12">
+            <label for="lname" class="lname-text">Enter Your Last name :</label>
+            <input type="text" class="lname" placeholder="Last name">
+        </div>
+    </div>
+    <div class="details row">
+        <div class="email-databox col-lg-6 col-md-12 col-sm-12">
+            <div class="enquires-email">
+                <label for="email" class="email-text"> Enter Your Mail Here :</label>
+                <input type="email" placeholder="abcd@gmail.com" class="email">
+            </div>
+        </div>
+        <div class="phone-databox col-lg-6 col-md-12 col-sm-12">
+            <div class="enquires-phone ">
+                <label for="phone" class="phone-text"> Enter Your Mobile Number : </label>
+                <input type="text" name="" id="phone">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="check-box">
+    <input type="checkbox">
+    <label for="checkbox">Do you want to get call from our customer care executive</label>
+</div>
+<div class="submit">
+    <input type="submit" value="Submit" class="submit-button btn btn-outline-danger">
+</div>
+<div>
+    <h3 class="social-media-heading">Contact Us Also On:</h3>
+    <div class="social-media">
+        <a href="https://www.instagram.com/vunnam_niranjan/?igshid=ZDdkNTZiNTM%3D"><i
+                class="fa-brands fa-instagram fa-xl insta brands"></i></a>
+        <a href="https://www.facebook.com/niranjanvunnam.pandu"><i
+                class="fa-brands fa-facebook fa-xl fb brands"></i></a>
+        <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQG6um5aVSWQJAAAAYfHXISw7B4_jlGdNeiyhb0FEgepp_wQrIuht7TtMzteHOmpMv33WBJdjG4lJN-JHdQVxOv48n6gbqo9GrCK5gNADUdTuBiqrpbZ2-5Js9qtQpbcP1axiv0=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fniranjan-kumar-13264324a"><i
+                class="fa-brands fa-linkedin fa-xl linked brands"></i></a>
+        <a href="https://github.com/VUNNAMNIRANJANKUMAR"><i class="fa-brands fa-github fa-xl git brands"></i></a>
+        <a href="https://t.me/Niranjan12345678"><i
+                class="fa-brands fa-telegram fa-xl tele brands"></i></a>
+    </div>
+</div> 
+</div>   
+ 
+<!-----------footer--------->   
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS Devices</p>
+                <div class="app-logo">
+                    <img src="C:\Users\vunna\OneDrive\Pictures\Saved Pictures\plastorelogo.png" >
+                    <img src="C:\Users\vunna\OneDrive\Pictures\Saved Pictures\appstorelogo.png" >
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="C:\Users\vunna\OneDrive\Napoles.jpg" style="height: 120px; width:110px">
+                <p>Our Purpose is to Sustainably Make the Pleasure and Benifits of Clothing Accessible to All.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Poliicy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2020 - Napoles</p>
+    </div>
+</div>
+<!-------------js for toggle menu--------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight= "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight== "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight= "0px"
+        }
+    }
+</script>
+
+
+<!--------js form toggle form------->
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+    function register(){
+
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(80px)";
+    }
+    function login(){
+
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+</script>
+
+
+</body>
+</html>
